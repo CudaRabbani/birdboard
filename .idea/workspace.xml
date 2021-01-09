@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e617cd-73e9-4804-b590-76ca84b124f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commandsForTesting.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -157,7 +151,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610055588994</updated>
-      <workItem from="1610055592557" duration="7394000" />
+      <workItem from="1610055592557" duration="7540000" />
+      <workItem from="1610220414678" duration="211000" />
     </task>
     <servers />
   </component>
@@ -165,6 +160,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1322" height="529" key="GridCell.Tab.0.bottom" timestamp="1610171874504">
+      <screen x="0" y="25" width="3840" height="1575" />
+    </state>
+    <state width="1322" height="529" key="GridCell.Tab.0.bottom/0.25.3840.1575@0.25.3840.1575" timestamp="1610171874504" />
+    <state width="1322" height="529" key="GridCell.Tab.0.center" timestamp="1610171874504">
+      <screen x="0" y="25" width="3840" height="1575" />
+    </state>
+    <state width="1322" height="529" key="GridCell.Tab.0.center/0.25.3840.1575@0.25.3840.1575" timestamp="1610171874504" />
+    <state width="1322" height="529" key="GridCell.Tab.0.left" timestamp="1610171874504">
+      <screen x="0" y="25" width="3840" height="1575" />
+    </state>
+    <state width="1322" height="529" key="GridCell.Tab.0.left/0.25.3840.1575@0.25.3840.1575" timestamp="1610171874504" />
+    <state width="1322" height="529" key="GridCell.Tab.0.right" timestamp="1610171874504">
+      <screen x="0" y="25" width="3840" height="1575" />
+    </state>
+    <state width="1322" height="529" key="GridCell.Tab.0.right/0.25.3840.1575@0.25.3840.1575" timestamp="1610171874504" />
     <state x="1699" y="740" key="NewPhpFileDialog" timestamp="1610061614586">
       <screen x="0" y="25" width="3840" height="1575" />
     </state>

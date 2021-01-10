@@ -108,3 +108,61 @@ public function a_project_requires_a_description()
 Let's run the test
 ```pf  ProjectsTest```
 It should be all green now!
+
+<h3>Model Test</h3>
+
+Let's say, we want to have a test for viewing a project
+```php
+/** @test */
+public function a_user_can_view_a_project()
+{
+    $this->withoutExceptionHandling();
+    $project = factory('App\Project')->create();
+    $this->get('/projects/'.$project->id)->assertSee($project->title)->assertSee($project->description);
+}
+```
+rerun the test and it should fail
+
+Let's take care off the error message and create route.
+In the above code we did string concatenation for the url which is bad practise.
+So Let's create a unit test for the Project to test what it can do and also sort out the path problem.
+```
+php artisan make:test ProjectTest --unit
+```
+Write the first test case to see if the project has a path
+```php
+/** @test */
+public function it_has_a_path()
+{
+    $project = factory('App\Project')->create();
+    $this->assertEquals('/projects/' . $project->id, $project->path());
+
+}
+```
+Run the test and it will fail. So on the Project model let's add the function path()
+```php
+public function path()
+{
+    return "/projects/$this->id";
+}
+```
+also change the a_user_can_view_a_projct() like following:
+```php
+/** @test */
+public function a_user_can_view_a_project()
+{
+    $this->withoutExceptionHandling();
+    $project = factory('App\Project')->create();
+    $this->get($project->path())
+        ->assertSee($project->title)
+        ->assertSee($project->description);
+}
+```
+
+Let's add some dummy data
+```
+php artisan tinker
+factory('App\Project', 5)->create();
+```
+
+

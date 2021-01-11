@@ -18,8 +18,36 @@ class ProjectsController extends Controller
 
     public function store()
     {
-        $attributes = request()->validate(['title' => 'required', 'description' => 'required']);
-        Project::create($attributes);
+        /*
+        //one approach
+        $attributes = request()->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'owner_id' => 'required'
+        ]);
+
+        Project::create($attributes);*/
+
+        //Second approach:
+        /*
+         * Let's say user needs to be logged in to create a project
+         */
+/*        $attributes = request()->validate([
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+
+        $attributes['owner_id'] = auth()->id();
+
+        Project::create($attributes);*/
+
+        //Or
+        $attributes = request()->validate([
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+        auth()->user()->projects()->create($attributes);
+
 
         return redirect('/projects');
     }
